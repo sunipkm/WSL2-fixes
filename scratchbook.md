@@ -1,5 +1,11 @@
 # To remember stuff I need sometimes on WSL
 
+### Getting MATLAB to work
+- Run `./bin/glnxa64/MATLABWindow` to check what libraries are missing.
+    - In the test case, it was `libgdk_pixbuf-2.0.so.0`, fixed by `sudo apt-get install --reinstall libgtk2.0-0`.
+    - Additionally, removed `/path/to/matlab/sys/os/libstdc++.so.6`. 
+- MATLAB should now launch with soft/hardware rendering (`matlab -nosoftwareopengl`).
+
 ### Reinstall Ubuntu distro without download
 
 - `wsl.exe --unregister Ubuntu`
