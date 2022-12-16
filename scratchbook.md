@@ -6,6 +6,9 @@
     - Additionally, removed `/path/to/matlab/sys/os/libstdc++.so.6`. 
 - MATLAB should now launch with soft/hardware rendering (`matlab -nosoftwareopengl`).
 
+### Network down on startup
+- `fsutil behavior set disablecompression 1`, following [this](https://superuser.com/questions/1624548/wsl2-has-all-network-interfaces-down-and-has-no-connectivity) solution.
+
 ### Reinstall Ubuntu distro without download
 
 - `wsl.exe --unregister Ubuntu`
