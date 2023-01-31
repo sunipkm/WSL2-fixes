@@ -1,5 +1,13 @@
 # To remember stuff I need sometimes on WSL
 
+### Disk compaction
+```powershell
+wsl --shutdown
+optimize-vhd -Path .\ext4.vhdx -Mode full
+```
+
+WSL2 ext4 path: `%USERPROFILE%\AppData\Local\Packages\CanonicalGroupLimited*\LocalState`.
+
 ### My WSL2 config
 ```
 [wsl2]
