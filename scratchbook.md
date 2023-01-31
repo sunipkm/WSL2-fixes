@@ -1,5 +1,15 @@
 # To remember stuff I need sometimes on WSL
 
+### My WSL2 config
+```
+[wsl2]
+networkingMode=bridged
+vmSwitch=WSL_External
+macAddress=AA:BB:CC:DD:EE:FF
+memory=24GB
+swap=16GB
+```
+
 ### Getting MATLAB to work
 - Run `./bin/glnxa64/MATLABWindow` to check what libraries are missing.
     - In the test case, it was `libgdk_pixbuf-2.0.so.0`, fixed by `sudo apt-get install --reinstall libgtk2.0-0`.
